@@ -9,7 +9,7 @@ def f(x, a, b):
 lamb, A = np.loadtxt('Es1.txt', delimiter='\t', unpack=True)
 
 x = 1240/lamb
-y = (2.303*A)**2
+y = (2.303*x*A)**2
 
 y_smooth = savgol_filter(y, 51, 3)
 
